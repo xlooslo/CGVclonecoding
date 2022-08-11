@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    ul{
+      list-style: none;
+      padding-left: 0px;
+      height: 20px;
+      display: flex; /*텍스트 옆으로 배치*/
+      flex-wrap: wrap;  /*화면이 꽉 차면 아랫줄로 내려옴*/
+    }
+    ul.EvtAllMenu{
+      flex-wrap: nowrap;  /*탭 메뉴가 내려오지 않도록 막음*/
+    }
+    li{
+      height: 20px;
+    }
+    a{
+      text-decoration-line: none;
+    }
+    a.EvtTapMenu{
+      color: gray;
+      margin-right: 50px;
+      white-space: nowrap;  /*창이 줄어들어도 글씨가 안 내려감*/
+      flex-wrap: nowrap;
+    }
+    a.EvtSubMenu{
+      color: white;
+      background-color: red;
+      font-size: 10px;
+      padding: 7px 5px;
+      display: inline-block;
+      float: right;
+      white-space: nowrap;  /*창이 줄어들어도 글씨가 안 내려감*/
+      flex-wrap: nowrap;
+    }
+    .EvtLine{
+      border-left: 1px solid lightgray;
+      border-right: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      margin-right: 0px;
+    }
+    .EvtTitle{
+      color: black;
+      font-size: 15px;
+      padding: 12px 0px 0px 8px;
+    }
+    .EvtDate{
+      color: gray;
+      font-size: 10px;
+      padding: 30px 0px 12px 8px;
+    }
+    .EvtSpace{
+      padding-right: 15px;
+    }
+    .EvtSideSpace{
+      padding-right: 20px;
+    }
+    .ImgSize{
+      width: 201px;
+    }
+    .SideImgSize{
+      width: 170px;
+    }
+  </style>
+  </head>
+  <body>
+    <div style="width: 824px; align: center; padding: 0px 300px 0px 300px; margin: 0px;"> <!--사이드 여백 및 창 줄여도 밀리지 않도록 고정-->
+      <span style="font: 40px bolder;">EVENT</span>
+      <div style="border: 1.5px solid black; display: block"></div>
+
+      <ul class="EvtAllMenu">
+        <li><a class="EvtTapMenu" href="SPECIAL.html">SPECIAL</a></li>
+        <li><a class="EvtTapMenu" href="MovieBook.html">영화/예매</a></li>
+        <li><a class="EvtTapMenu" href="MembershipCLUB.html">멤버십/CLUB</a></li>
+        <li><a class="EvtTapMenu" href="CGVCinema.html">CGV 극장별</a></li>
+        <li><a class="EvtTapMenu" href="PartnershipDiscount.html" style="margin-right: 50px;">제휴/할인</a></li>
+        <li style="margin: 57px;"></li>
+        <li><a class="EvtSubMenu" href="WinnerAnnouncement.html" style="margin-right: 3px;">당첨자 발표</a></li>
+        <li><a class="EvtSubMenu" href="EndedEvents.html">종료된 이벤트</a></li>
+      </ul>
+      <div style="margin-bottom: 40px; border: 0.5px solid black; display: block"></div>
+
+      <ul>
+        <li>
+          <a href="">
+            <img class="ImgSize" src="1.jpeg">
+            <div class="EvtLine">
+              <div class="EvtTitle">씨지밤 VIP 인센티브</div>
+              <div class="EvtDate">2022.07.13~2022.08.31</div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <div class="EvtSpace"></div>
+        </li>
+        <li>
+          <a href="">
+            <img class="ImgSize" src="1.jpeg">
+            <div class="EvtLine">
+              <div class="EvtTitle">씨지밤 VIP 인센티브</div>
+              <div class="EvtDate">2022.07.13~2022.08.31</div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <div class="EvtSpace"></div>
+        </li>
+        <li>
+          <a href="">
+            <img class="ImgSize" src="1.jpeg">
+            <div class="EvtLine">
+              <div class="EvtTitle">씨지밤 VIP 인센티브</div>
+              <div class="EvtDate">2022.07.13~2022.08.31</div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <div class="EvtSideSpace"></div>
+        </li>
+        <li>
+          <a href="">
+            <img class="SideImgSize" src="2.jpeg">
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <img class="ImgSize" src="1.jpeg">
+            <div class="EvtLine">
+              <div class="EvtTitle">씨지밤 VIP 인센티브</div>
+              <div class="EvtDate">2022.07.13~2022.08.31</div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </body>
+</html>
