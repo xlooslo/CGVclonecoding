@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>영화 그 이상의 감동, CGV</title>
+    <style media="screen">
+      a{
+        text-decoration-line: none;
+      }
+      .outer-container{
+        display: grid;
+        grid-template-columns: 800px 160px;
+        grid-template-rows: 93px 90px 300px 300px;
+        grid-template-areas: 'header header'
+                             'menu menu'
+                             'inner-container sidebar1'
+                             'inner-container sidebar2';
+        gap: 10px;
+        margin: 0px 200px;
+      }
+      .outer-container div{
+        /*background-color: skyblue;
+        border: 1px solid;*/
+      }
+      .inner-container{
+        display: grid;
+        grid-template-columns: 252px 252px 252px;
+        grid-template-areas: 'main1 main2 main3'
+                             'main4 main5 main6'
+                             'main7 main8 main9';
+        gap: 15px;
+      }
+      .inner-container div{
+        border: 1px solid lightgray;
+      }
+      .header{
+        grid-area: header;
+        font: 40px bolder;
+        font-weight: 600;
+        padding-top: 30px;
+        border-bottom: 3px solid black;
+      }
+      .menu{
+        grid-area: menu;
+        border-bottom: 1px solid gray;
+        height: 43px;
+      }
+      .inner-container{
+        grid-area: inner-container
+      }
+      .sidebar1{
+        grid-area: sidebar1;
+      }
+      .sidebar2{
+        grid-area: sidebar2;
+      }
+      .EvtAllMenu{
+        list-style: none;
+        padding-left: 0px;
+        display: flex; /*텍스트 옆으로 배치*/
+        justify-content: space-between;
+        margin: 2px 0px 7px 0px;s
+      }
+      .EvtTapMenu{
+        color: gray;
+        margin-right: 50px;
+        font: 17px bolder;
+        font-weight: 600;
+      }
+      .EvtTapSpace{
+        padding-top: 5px; /*EvtSubMenu랑 y축 맞춤*/
+      }
+      .EvtSubMenu{
+        color: white;
+        background-color: lightcoral;
+        font-size: 12px;
+        padding: 7px 8px;
+        display: inline-block;
+      }
+      .ImgSize{
+        width: 251px;
+      }
+      .SideImgSize{
+        width: 160px;
+      }
+      .Contents{
+        font: 15px bolder;
+        font-weight: 500;
+        margin: 0px;
+        padding: 15px;
+      }
+      .ContentsDate{
+        font-size: 12px;
+        color: gray;
+        margin: 0px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="header">EVENT</div>
+      <div class="menu">
+        <ul class="EvtAllMenu">
+          <li class="EvtTapSpace"><a class="EvtTapMenu" href="index.html">SPECIAL</a></li>
+          <li class="EvtTapSpace"><a class="EvtTapMenu" href="MovieBook.html">영화/예매</a></li>
+          <li class="EvtTapSpace"><a class="EvtTapMenu" href="MembershipCLUB.html">멤버십/CLUB</a></li>
+          <li class="EvtTapSpace"><a class="EvtTapMenu" href="CGVCinema.html">CGV 극장별</a></li>
+          <li class="EvtTapSpace"><a class="EvtTapMenu" href="PartnershipDiscount.html" style="margin-right: 50px; color: red;">제휴/할인</a></li>
+          <li style="margin: 57px;"></li> <!--빈 공간-->
+          <li><a class="EvtSubMenu" href="WinnerAnnouncement.html" style="margin-right: -10px;">당첨자 발표</a></li>
+          <li><a class="EvtSubMenu" href="EndedEvents.html">종료된 이벤트</a></li>
+        </ul>
+      </div>
+      <div class="inner-container">
+        <div class="main1">
+          <img class="ImgSize" src="PartnershipDiscount/1.jpeg">
+          <p class="Contents">압구정 IMAX 신규 오픈</p>
+          <p class="ContentsDate">2022.08.12~2022.08.18</p>
+        </div>
+        <div class="main2">
+          <img class="ImgSize" src="PartnershipDiscount/2.jpeg">
+          <p class="Contents">개봉작 사용설명서</p>
+          <p class="ContentsDate"> </p>
+        </div>
+        <div class="main3">
+          <img class="ImgSize" src="PartnershipDiscount/3.jpeg">
+          <p class="Contents">[불릿 트레인] SX 리미티드 포스터</p>
+          <p class="ContentsDate">2022.08.18~2022.09.11</p>
+        </div>
+        <div class="main4">
+          <img class="ImgSize" src="PartnershipDiscount/4.jpeg">
+          <p class="Contents">[불릿 트레인] 4DX 리미티드 포스터</p>
+          <p class="ContentsDate">2022.08.18~2022.09.11</p>
+        </div>
+        <div class="main5">
+          <img class="ImgSize" src="PartnershipDiscount/5.jpeg">
+          <p class="Contents">[불릿 트레인] 필름마크</p>
+          <p class="ContentsDate">2022.08.17~2022.09.11</p>
+        </div>
+        <div class="main6">
+          <img class="ImgSize" src="PartnershipDiscount/6.jpeg">
+          <p class="Contents">라스트 특가</p>
+          <p class="ContentsDate">2022.08.08~2022.08.23</p>
+        </div>
+        <div class="main7">
+          <img class="ImgSize" src="PartnershipDiscount/7.jpeg">
+          <p class="Contents">[귀멸의 칼날: 아사쿠사 편] 필름마크</p>
+          <p class="ContentsDate">2022.08.18~2022.09.11</p>
+        </div>
+        <div class="main8">
+          <img class="ImgSize" src="PartnershipDiscount/8.jpeg">
+          <p class="Contents">[탑건: 매버릭] 4DX 특별 포스터</p>
+          <p class="ContentsDate">2022.08.12~2022.08.23</p>
+        </div>
+        <div class="main9">
+          <img class="ImgSize" src="PartnershipDiscount/9.jpeg">
+          <p class="Contents">[헌트] 필름마크</p>
+          <p class="ContentsDate">2022.08.03~2022.08.28</p>
+        </div>
+      </div>
+      <div class="sidebar1">
+        <img class="SideImgSize" src="PartnershipDiscount/side1.jpeg">
+      </div>
+      <div class="sidebar2">
+        <img class="SideImgSize" src="PartnershipDiscount/side2.jpeg">
+      </div>
+    </div>
+  </body>
+</html>
